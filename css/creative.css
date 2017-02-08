@@ -155,8 +155,8 @@ header {
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: url('../img/dna-header.jpg');
-  text-align: center;
+  background-image: url('../img/header.jpg');
+  text-align: center;head
   color: white;
 }
 header .header-content {
