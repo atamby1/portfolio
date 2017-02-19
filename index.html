@@ -3,29 +3,19 @@
 
 <head>
 
-    <script src="https://use.fontawesome.com/ac5736e34c.js"></script>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Cancer Relapse Classification</title>
+    <title>Avinash's Data Science Portfolio</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-
-    <!-- Plugin CSS -->
-    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
-
-    <!-- Theme CSS -->
-    <link href="css/creative.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/1-col-portfolio.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -36,212 +26,162 @@
 
 </head>
 
-<body id="page-top">
+<body>
 
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Cancer Relapse Classification</a>
+                <a class="navbar-brand" href="#">Avinash's data Science Portfolio</a>
             </div>
-
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="#background">Background</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#data">The Data</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#methods">Methods</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#tsp">TSP</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#results">Results</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container-fluid -->
+        <!-- /.container -->
     </nav>
 
-    <header>
-        <div class="header-content">
-            <div class="header-content-inner">
-                <h1 id="homeHeading">Genetic Cancer Research</h1>
-                <hr>
-                <p>Can I use gene expression levels to predict whether or not cancer patients will relapse?</p>
-                <a href="#background" class="btn btn-primary btn-xl page-scroll">Find Out</a>
-            </div>
-        </div>
-    </header>
+    <!-- Page Content -->
+    <div class="container">
 
-    <section class="bg-primary" id="background">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Background</h2>
-                    <hr class="light">
-                    <p class="text-faded">Cancer develops from genetic mutations that prevent programmed cell deaths. These cells keep growing and dividing and stealing resources from normally functioning cells. New technologies allow us to quickly quantify the gene expression levels in cells and we can use this information to target specific genes for cancer therapy.</p>
-                    <p class="text-faded">In this project, I analyze the expression levels from 22,215 genes taken from 424 ER+ type breast cancer patients who were treated with surgery or surgery and radiation, but not treated with systemic hormonal therapy or chemotherapy. These patients fall into 1 of 2 categories. NoRelapse patients did not relapse within the 6.5 year study they participated in, while Relapse patients did relapse within the 6.5 year study. I split the patients into a 212-patient training set (on which I build my 3 models) and a 212-patient testing set. The training set has 152 NoRelapse patients and 60 Relapse patients. The testing set has 137 NoRelapse patients and 75 Relapse patients.</p>
-                    <p class="text-faded">The goals of my analysis are: 1. to classify patients into either the NoRelapse category or the Relapse category solely based on their gene expression profiles, and 2. to identify the genes that separate between the two classes the best.</p>
-                    <a href="#data" class="page-scroll btn btn-default btn-xl sr-button">Understand the Data</a>
-                </div>
+        <!-- Page Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Data Science Projects
+                </h1>
             </div>
         </div>
-    </section>
+        <!-- /.row -->
 
-    <section id="data">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">The Data</h2>
-                    <hr class="primary">
-                </div>
+        <!-- Project One -->
+        <div class="row">
+            <div class="col-md-7">
+                <a href="#">
+                    <img class="img-responsive" src="images/dna.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>Cancer Relapse Classification</h3>
+                <p>An interesting problem in computational medicine right now is trying to use gene expression levels to predict phenotypes. Specifically in this project, I analyze gene expression profiles from breast cancer patients to see if we can predict which these patients who are in remission will relapse.</p>
+                <a class="btn btn-primary" href="https://github.com/atamby1/GA-projects/tree/master/06-Cancer-Relapse">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <a href="https://en.wikipedia.org/wiki/DNA_microarray">
-                        <i class="fa fa-microchip fa-4x sr-contact" aria-hidden="true"></i>
-                        <h3>DNA Microarray</h3></a>
-                        <p class="text-muted">The gene expression levels come from DNA microarrays. A DNA microarray is a collection of DNA spots attached to a solid surface which scientists can then use to measure the expression levels of large numbers of genes simulataneously.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                       <a href="https://en.wikipedia.org/wiki/Gene_expression">
-                        <i class="fa fa-eye fa-4x sr-contact" aria-hidden="true"></i>
-                        <h3>Gene Expression</h3></a>
-                        <p class="text-muted">The process by which information from a gene is expressed as a physical feature. Measuring gene expression gives us the ability to quantify the level at which a particular gene is expressed within a cell, tissue, or organism.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <a href="https://www.ncbi.nlm.nih.gov/pubmed/15846361">
-                        <i class="fa fa-flask fa-4x sr-contact" aria-hidden="true"></i>
-                        <h3>Lab to Lab Variation</h3></a>
-                        <p class="text-muted">These data were collected from 3 different European studies. Microarray data collected on the same phenotypes but by different labs can be surprisingly different, and results obtained from one dataset often do not generalize to the others.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <a href="http://stats.stackexchange.com/questions/169156/explain-curse-of-dimensionality-to-a-child">
-                        <i class="fa fa-4x fa-cubes text-primary sr-icons"></i>
-                        <h3>High Dimensionality</h3></a>
-                        <p class="text-muted">The data are very high-dimensional meaning there are a lot of features (22,215 genes) and few samples (424 patients). This makes it difficult to understand the true underlying relationships between genes and motivates the algorithm I describe below.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        <!-- /.row -->
 
-    <section class="bg-primary" id="methods">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Methods</h2>
-                    <hr class="light">
-                    <p class="text-faded">I compared 3 different machine learning techniques for my analysis. The first two are standard classifiers: a Random Forest Classifier and a Gradient Boosting Classifier. The third classifier is one that I read about in a paper then built from scratch. I describe the algorithm in the next section.</p>
-                    <p></p>
-                    <p class="text-faded">The Random Forest Classifier.</p>
-                    <a href="#tsp" class="page-scroll btn btn-default btn-xl sr-button">What is TSP?</a>
-                </div>
-            </div>
-        </div>
-    </section>
+        <hr>
 
-    <section id="tsp">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <a href="http://www.cis.jhu.edu/publications/papers_in_database/GEMAN/interface.pdf"><h2 class="section-heading">Top Scoring Pair(s) Classifier</h2></a>
-                    <hr class="primary">
-                    <p class="text-muted">I wanted to use a highly transparent, easily interpretable method where I would be able to advise scientists on which genes to focus on when researching ER+ breast cancer development, so I built the algorithm discussed in the linked paper. It is a comparison-based classification technique which chooses a gene pair with the largest score relative to a measurement of discrimination. The pair with the largest score (the TSP) votes for the class which makes the observed ordering within that pair the most likely. There are no parameters to tune.</p>
-                    <p></p>
-                    <p>Note: If you don't want to read about how the algorithm works, you can skip the rest of this section.</p>
-                    <p class='text-muted'>The algorithm works as follows. First, suppose I have n patients, each of whom have G genes whose expression levels are measured using DNA microarrays. Each patient either did not relapse (0) or did relapse (1). I choose a pair of genes i and j. I call this pair X. X will be a nx2 matrix with n patients and 2 genes in the pair. Next, for each patient in X, I rank the expression levels. I call this nx2 rank matrix R where each element in the matrix is either a 0 or a 1 depending on which gene in the pair had the larger expression level. I repeat this process for every gene pair.</p>
-                    <p></p>
-                    <p class='text-muted'>I want to find the gene pairs for which there is a significant difference in the probability of gene i < gene j from class 0 to class 1. The probability is esimated by the relative frequencies of occurrences of gene i < gene j. Thus, I calculate 2 probabilities fo each gene pair: 1) probability that gene i is expressed less than gene j given class 0 and 2) the probability that gene i is expressed less than gene j given class 1. The larger the difference in these probabilities, the more discriminatory the gene pair. Since I want to find the most discriminatory gene pairs, I calculate this difference for every gene pair and denote it as the score of gene pair (i, j). The pair with the largest score is the pair I will base my classification on.</p>
-                    
-                    <a href="#results" class="btn btn-primary btn-xl page-scroll">See the Results!</a>
-                </div>
+        <!-- Project Two -->
+        <div class="row">
+            <div class="col-md-7">
+                <a href="#">
+                    <img class="img-responsive" src="images/terror.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>Analyzing Global Terrorism</h3>
+                <p>How has terrorism evolved over the last 45 years? We can analyze information on terrorist attacks across the world including information on location, tactics, perpetrators, targets and outcomes to find out.</p>
+                <a class="btn btn-primary" href="https://github.com/atamby1/GA-projects/tree/master/05-Global-Terrorism">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
         </div>
-    </section>
+        <!-- /.row -->
 
-   <section class="bg-primary" id="results">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Results</h2>
-                    <hr class="light">
-                    <p class="text-faded">There are several metrics I look at to determine how well my models performed. The most basic one is accuracy which calculates correct classifications / total classifications. Since my testing set had 137 NoRelapse patients of 212 patients, if I predict that everyone in my testing set was NoRelapse, I'd get 137/212 = 65% accuracy. This is my "null accuracy" that my models will to to improve upon.</p>
-                    <p class="text-faded">Another important metric to look at is the True Positive Rate vs. the False Positive Rate. The TPR is the percentage of time I correctly classify a patient as Relapse and the FPR is the percentage of time I incorrectly classify a patient as Relapse (meaning the patient was in reality NoRelapse). I want to maximize the TPR and minimize the FPR because of course, I don't want to give a patient a new treatment if she did not relapse.</p>
-                    <p class="text-faded"></p>
-                    <a href="#contact" class="page-scroll btn btn-default btn-xl sr-button">Contact Me</a>
-                </div>
-            </div>
-        </div>
-    </section>
+        <hr>
 
-    <aside class="bg-dark">
-        <div class="container text-center">
-            <div class="call-to-action">
-                <h2>See the Source Code!</h2>
-                <a href="https://github.com/atamby1"><i class="fa fa-github fa-4x sr-contact"></i></a>
+        <!-- Project Three -->
+        <div class="row">
+            <div class="col-md-7">
+                <a href="#">
+                    <img class="img-responsive" src="images/virus.png" alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>West Nile Virus Prediction</h3>
+                <p>Can we help Chicago track and eradicate mosquitoes carrying West Nile Virus in a more effective and efficient manner? Let's try to analyze information about current mosquito trap locations, pesticide spray locations, weather, and other factors to help Chicago eliminate this virus.</p>
+                <a class="btn btn-primary" href="https://github.com/atamby1/GA-projects/tree/master/04-West-Nile">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
         </div>
-    </aside>
+        <!-- /.row -->
 
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Let's Get In Touch!</h2>
-                    <hr class="primary">
-                    <p>Think this was cool? Find me on LinkedIn or send me an email!</p>
-                </div>
-                <div class="col-lg-4 col-lg-offset-2 text-center">
-                    <a href="https://www.linkedin.com/in/avinashtamby">
-                    <i class="fa fa-linkedin fa-3x sr-contact"></i>
-                    <p>Avinash TAMBY</p></a>
-                </div>
-                <div class="col-lg-4 text-center">
-                    <a href="mailto:atamby1@gmail.com">
-                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-                    <p>atamby1@gmail.com</p></a>
-                </div>
+        <hr>
+
+        <!-- Project Four -->
+        <div class="row">
+
+            <div class="col-md-7">
+                <a href="#">
+                    <img class="img-responsive" src="images/datascience.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>Predicting Data Science Salaries</h3>
+                <p>"Data Scientist" has been called "the sexiest job of the 21st century". But can we predict whether a posting on Indeed will pay above or below the median salary for data scientists? Can we find which variables have a lot of predictive power?</p>
+                <a class="btn btn-primary" href="https://github.com/atamby1/GA-projects/tree/master/03-Data-Science-Salaries">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
         </div>
-    </section>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Project Five -->
+        <div class="row">
+            <div class="col-md-7">
+                <a href="#">
+                    <img class="img-responsive" src="images/liquor.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>Predicting Liquor Sales in Iowa</h3>
+                <p>Iowa collects information about every transaction for stores that have a class E liquor license. The Iowa state tax board is considering changing the tax policy regarding liquor. Can we predict the total sales in 2016 using sales information from 2015 to advise the tax board?</p>
+                <a class="btn btn-primary" href="https://github.com/atamby1/GA-projects/tree/master/02-Iowa-Liquor">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Project Six -->
+        <div class="row">
+            <div class="col-md-7">
+                <a href="#">
+                    <img class="img-responsive" src="images/sat.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>Analyzing SAT scores</h3>
+                <p>Which states have the highest SAT scores on average? Why is there such a large disparity? Let's take a look at the average SAT scores by state and try to glean some information from it.</p>
+                <a class="btn btn-primary" href="https://github.com/atamby1/GA-projects/tree/master/01-SAT-scores">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Avinash TAMBY 2017</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
 
     <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="js/creative.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
 </body>
 
